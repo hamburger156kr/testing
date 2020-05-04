@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>:: GEOLOCATION + Daum Map API ::</title>
+<script type="text/javascript">
+    navigator.geolocation.getCurrentPosition(function(position) {
+      console.log(position.coords.latitude + ' ' + position.coords.longitude);
+    }, function(error) {
+      console.error(error);
+    }, {
+      enableHighAccuracy: true,
+      maximumAge: 0,
+      timeout: Infinity
+    });
+
+</script>
+</head>
+<body>
+</body>
+</html>
